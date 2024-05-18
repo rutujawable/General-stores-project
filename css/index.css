@@ -1,0 +1,584 @@
+ .logo_img{
+    height: 100px;
+    width: 100px;
+}
+.nav-body{
+    width: 100px;
+}*/
+ .user{
+    height: 50px; }
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+
+   
+    
+    .logo_text {
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 500px;
+      font-style: normal;
+      color: aqua;
+    }
+    
+  .font_7{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+  }
+
+  .text{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+   color:  #2f0468; 
+  
+  
+    
+  }
+
+  .store_img{
+    height: 400px;
+    width: 400px;
+  
+    margin-top: 10px;
+    margin: 1px;
+
+  }
+  
+  .image_container{
+    margin: 0 auto;
+   text-align: center;
+  
+
+  }
+  
+  .heading{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    
+      font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+    
+  }
+
+  .product_card{
+    border: solid 1px rgb(224, 207, 207);
+    height: 470px;
+    width: 280px;
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    
+    box-shadow: 2px 3px 10px 2px black;
+    margin: 30px;
+    
+    }
+    
+    .product_card:hover{
+  
+  
+      box-shadow: 0 6px 28px black;
+      position: relative;
+      transform: translateY(-6px);
+      transition: 0.3s;
+       
+    
+    
+    }
+
+  .card_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+
+  }
+ 
+  .imgg{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .product_name{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    
+  }
+  .font_family{
+    font-family: "Poetsen One", sans-serif;
+  }
+  .product_price{
+    font-family:  "Dancing Script", cursive;
+    
+  }
+
+  .increment-icon-img{
+    height: 25px;
+  }
+  .txt1{
+    font-size: 20px;
+  }
+  .increment-icon{
+    text-align: center;
+  }
+  .ratings{
+    height: 20px;
+  }
+  .rating_like{
+    margin-left: 90px;
+    height: 25px;
+  }
+  .btn:hover{
+    
+    box-shadow: 0 6px 28px rgb(232, 229, 229);
+    position: relative;
+    transform: translateY(-6px);
+    transition: 0.3s;
+     
+  }
+  .f-3{
+    font-family: "Dancing Script", cursive;
+  }
+
+  .footer{
+    margin-top: 30px;
+    background-color:black;
+    padding: 20px;
+    color: white;
+}
+.footer-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card{
+    display: block;
+}
+.footer-main-logo{
+    width: 250px;
+}
+.footer-logo-section{
+    width: 250px;
+    color: white;
+    margin-top: 15px;
+}
+.footer-contact{
+    width: 300px;
+}
+.quick-links-contain{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+.quick-links  a:hover{
+    color: white;
+    padding-left: 8px;
+}
+
+.footer-social{
+    text-align: center;
+}
+
+.social-text{
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.contact-info{
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.contact-info:hover{
+    padding-left: 8px;
+}
+.contact-text {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+.contact-text:hover{
+    padding-left: 12px;
+}
+.contact-text1{
+    color: white;
+}
+h4{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 599px)
+{
+    .hamburger{
+        visibility: visible;
+        height: 40px;
+    }
+    .nav-text{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    .head{
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin: 8px 0px;
+    }
+    .head-img{
+        height: 300px;
+    }
+    .head-left{
+        padding: 5px;
+    }
+    .head-right{
+        margin-left: 100px;
+    }
+    .bttn{
+        padding: 13px;
+        font-size: 12px;
+    }
+    .pet-row{
+        flex-wrap: wrap;
+        margin: 2px 30px;
+    }
+    .pets-head{
+        font-size: 22px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .cart{
+        margin-top: 25px;
+        margin-right: 150px;
+    }
+    .footer-main-logo{
+        width: 350px;
+    }
+    .footer-container-info{
+        margin-left: 40px;
+    }
+    .footer-social{
+        text-align: start;
+    }
+    .section{
+        flex-wrap: wrap;
+    }
+    .section-tagline, .banner-head{
+        font-size: 25px;
+    }
+    .section-icon{
+        height: 100px;
+    }
+    .section-card{
+        margin: 10px 30px;
+        flex-wrap: wrap;
+        width: 150px;
+        padding: 20px;
+    }
+    .banner{
+        flex-wrap: wrap;
+    }
+    .banner-child{
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .hamburger{
+        visibility: visible;
+        height: 40px;
+    }
+    .nav-text{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    .head{
+        font-size: 14px;
+        margin: 8px 0px;
+    }
+    .head-img{
+        height: 280px;
+    }
+    .head-left{
+        padding: 3px;
+    }
+    .bttn{
+        padding: 15px;
+        font-size: 13px;
+    }
+    .pet-row{
+        flex-wrap: wrap;
+        margin: 2px 30px;
+    }
+    .pets-head{
+        font-size: 22px;
+    }
+    .container{
+        margin: 20px 40px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .cart{
+        margin-top: 15px;
+        margin-right: 40px;
+        width: 90%;
+    }
+    .footer-main-logo{
+        width: 350px;
+    }
+    .footer-container-info{
+        margin-left: 40px;
+    }
+    .footer-social{
+        text-align: start;
+    }
+    .section{
+        flex-wrap: wrap;
+    }
+    .section-tagline, .banner-head{
+        font-size: 25px;
+    }
+    .section-icon{
+        height: 100px;
+    }
+    .section-card{
+        margin: 10px 30px;
+        flex-wrap: wrap;
+        width: 150px;
+        padding: 20px;
+    }
+    .banner{
+        flex-wrap: wrap;
+    }
+    .banner-child{
+        margin-top: 40px;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .hamburger{
+        display: none;
+    }
+    .logo{
+        height: 60px;
+    }
+    .nav-text{
+        font-size: 17px;
+        padding: 15px 13px;
+        margin-left: 0;
+    }
+    .head{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .head-img{
+        height: 350px;
+    }  
+    .bttn{
+        padding: 17px;
+        font-size: 14px;
+    }
+    .pet-row{
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    .pets-head{
+        font-size: 28px;
+    }
+    .container{
+        margin: 20px 40px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .cart{
+        margin-top: 25px;
+        margin-right: 40px;
+        width: 40%;
+    }
+    .footer-main-logo{
+        width: 300px;
+    }
+    .footer-container-info{
+        margin-left: 40px;
+    }
+    .footer-social{
+        text-align: start;
+    }
+    .section{
+        flex-wrap: wrap;
+    }
+    .section-tagline, .banner-head{
+        font-size: 25px;
+    }
+    .section-icon{
+        height: 100px;
+    }
+    .section-card{
+        flex-wrap: wrap;
+        width: 150px;
+        padding: 20px;
+    }
+    .banner{
+        flex-wrap: wrap;
+    }
+    .banner-child{
+        margin: 20px 30px;
+        width: 60%;
+        text-align: center;
+    }
+    .banner-img{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 992px){
+    .hamburger{
+        display: none;
+    }
+}
+
+.vdo{
+margin-top: 10px;
+/* margin-left: 30%; */
+ /* width: 00px; */
+margin-left: 20px;
+margin-top: 100px;
+
+
+display: inline;
+
+
+   
+}
+.vdo-container{
+    display: flex;
+    flex-direction: row;
+}
+.services-img{
+    width: 150px;
+    border: 2px dashed rgb(81, 118, 63);
+    border-radius: 50%;
+    padding: 24px;
+}
+
+.services{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.service-text{
+    text-align: center;
+    margin-top: 10px;
+    color: #003C43;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.hero-btn{
+    background: transparent;
+    border: none;
+}
+
+.btn-read-more {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: rgb(81, 118, 63);
+    color: wheat;
+    border: none;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    
+    .big-text{
+        font-size: 60px;
+    }
+    .image{
+        height: 320px;
+    }
+    .services{
+        flex-wrap: wrap;
+    }
+    
+}
+@media (max-width: 700px){
+    
+    .big-text{
+        font-size: 55px;
+    }
+    .image{
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .big-text{
+        font-size: 40px;
+    }
+    .image{
+        height: 220px;
+    }
+}
+
+@media (max-width: 440px){
+    .small-text{
+        font-size: 15px;
+    }
+    
+    .big-text{
+        font-size: 25px;
+    }
+    .image{
+        height: 200px;
+    }
+    .services{
+        margin-left: 10px;
+    }
+    .subheading{
+        font-size: 50px;
+    }
+}
+
+
