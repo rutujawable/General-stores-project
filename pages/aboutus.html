@@ -3,17 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about page</title>
+    <title>Home page</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald&display=swap');
+      
+       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald&family=Poetsen+One&display=swap');
+</style>
+      
 </head>
-<body>
-   
+
+<body id="body">
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top"  data-bs-theme="dark">
+    <div class="container-fluid mt-2 font_7 ">
+      <a class="navbar-brand  mb-4 " href="#"> <span class="logo_text"><b><span style="color:#ff7200;">SANJAY</span> KIRANA</b>     </a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll  font_7 " style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active mx-3 " aria-current="page" href="../pages/index.html"><b>HOME</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-2 "aria-current="page" href="../pages/aboutus.html"><b>REVIEWS</b></a>
+          </li>
+         
+          <li class="nav-item active ">
+            <a class="nav-link  active mx-3" aria-current="page" href="../pages/product.html"><b>PRODUCTS</b></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link  active mx-2" aria-current="page" href="../pages/contact.html"><b>contact us</b></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link disabled active mx-3" aria-disabled="true"><b>OPEN TIME :9.00 AM </b></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link disabled active mb-4 mx-3" aria-disabled="true"><img style="height: 30px;" src="../icons/user.png"></a>
+          </li>
+        
+        </ul>
+        <form class="d-flex  mb-4 " role="search">
+          <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> 
+   <img src="../images/dark.png" style="height: 30px; margin-top: 100px; margin-left: 5px;" id="dark-mode" onclick="darkmode()" >
+    <img src="../images/light.png" style="height: 30px; margin-top: 100px;" id="light-mode" onclick="lightmode()" > 
+
 
  
 
+  <h1 class=" text bg-body-secondary heading"  >Customer Reviews</h1>
 
-
-
-
+<div class="container font_family" style="margin-top: 50px;">
+  <!-- <h1 class="text-center mb-4  text bg-body-secondary heading" >Customer Reviews</h1> -->
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mb-4 review_card">
+        <div class="card-body">
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel magna at mauris gravida sodales.🤞🤝"</p>
+          <p class="card-text"><small class="text-muted">Rated: 4/5</small></p>
+        </div>
+      </div>
+    </div>
     
-</body>
-</html>
+    <div class="col-md-6">
+        <div class="card mb-4 review_card">
+          <div class="card-body">
+            <h5 class="card-title">Jane Smith</h5>
+            <p class="card-text">"Vestibulum efficitur quam eu lectus pretium, eget laoreet libero volutpat.🤗❤️"</p>
+            <p class="card-text"><small class="text-muted">Rated: 5/5</small></p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Add more review cards as needed -->
+   
+          
+                                        
+    
+  </div>
+</div>
+
+
+<div class="container font_family" >
+    <h1 class="text-center mb-4"></h1>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 review_card">
+          <div class="card-body">
+            <h5 class="card-title">Rutuja Wable</h5>
+            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel magna at mauris gravida sodales.🤗❤️"</p>
+            <p class="card-text"><small class="text-muted">Rated: 4/5</small></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+          <div class="card mb-4 review_card">
+            <div class="card-body">
+              <h5 class="card-title">Rutuja More</h5>
+              <p class="card-text">"Vestibulum efficitur quam eu lectus pretium, eget laoreet libero volutpat.🤗❤️"</p>
+              <p class="card-text"><small class="text-muted">Rated: 5/5</small></p>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Add more review cards as needed -->
+     
+            
+                                          
+      
+    </div>
+  </div>
+  
+  <div class="container font_family">
+    <h1 class="text-center mb-4"></h1>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 review_card">
+          <div class="card-body">
+            <h5 class="card-title">Bhakti Shinde</h5>
+            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel magna at mauris gravida sodales.🤞🤝"</p>
+            <p class="card-text"><small class="text-muted">Rated: 4/5</small></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+          <div class="card mb-4 review_card">
+            <div class="card-body">
+              <h5 class="card-title">Sakshi Shewale</h5>
+              <p class="card-text">"Vestibulum efficitur quam eu lectus pretium, eget laoreet libero volutpat.🤞🤝"</p>
+              <p class="card-text"><small class="text-muted">Rated: 5/5</small></p>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Add more review cards as needed -->
+     
+            
+                                          
+      
+    </div>
+  </div>
+  
+  <div class="container font_family">
+    <h1 class="text-center mb-4"></h1>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 review_card">
+          <div class="card-body">
+            <h5 class="card-title">Shubhangi Pawar</h5>
+            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel magna at mauris gravida sodales.🤗❤️"</p>
+            <p class="card-text"><small class="text-muted">Rated: 4/5</small></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+          <div class="card mb-4 review_card">
+            <div class="card-body">
+              <h5 class="card-title">Nikita Raut</h5>
+              <p class="card-text">"Vestibulum efficitur quam eu lectus pretium, eget laoreet libero volutpat.🤗❤️"</p>
+              <p class="card-text"><small class="text-muted">Rated: 5/5</small></p>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Add more review cards as needed -->
+     
+            
+                                          
+      
+    </div>
+  </div>
+  
+  
+  <div class="container font_family">
+    <h1 class="text-center mb-4"></h1>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 review_card">
+          <div class="card-body">
+            <h5 class="card-title">Tejasvi Tarde</h5>
+            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel magna at mauris gravida sodales.🤗❤️"</p>
+            <p class="card-text"><small class="text-muted">Rated: 4/5</small></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+          <div class="card mb-4 review_card">
+            <div class="card-body">
+              <h5 class="card-title">Rutuja Jadhav</h5>
+              <p class="card-text">"Vestibulum efficitur quam eu lectus pretium, eget laoreet libero volutpat.🤗❤️"</p>
+              <p class="card-text"><small class="text-muted">Rated: 5/5</small></p>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Add more review cards as needed -->
+     
+            
+                                          
+      
+    </div>
+  </div>
+  
+  
+  <div class="container font_family">
+    <h1 class="text-center mb-4"></h1>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 review_card">
+          <div class="card-body">
+            <h5 class="card-title">Sarita Sadgir</h5>
+            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel magna at mauris gravida sodales.🤗❤️"</p>
+            <p class="card-text"><small class="text-muted">Rated: 4/5</small></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+          <div class="card mb-4 review_card">
+            <div class="card-body">
+              <h5 class="card-title">Sakshi Tambe</h5>
+              <p class="card-text">"Vestibulum efficitur quam eu lectus pretium, eget laoreet libero volutpat.🤗❤️"</p>
+              <p class="card-text"><small class="text-muted">Rated: 5/5</small></p>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Add more review cards as needed -->
+     
+            
+                                          
+      
+    </div>
+  </div>
+  
+  
+  <div class="add-review">
+    <p class="font-changed text text bg-body-secondary heading"><b>Add Review Here</b></p>
+    <input type="text" placeholder="Type Review..." class="type"/><br/><br/>
+    <button type="button" style="width: 130px;"    class="btn btn-success" onclick="review()"> ADD</button>
+  </div>
+  
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="footer font_family" style="height: 300px;">
+    <div class="footer-container">
+        <div class="footer-logo-section cart ">
+            <img src="../images/logo.png"  width="50px" height="100px"  class="footer-main-logo">
+            <p class="footer-container-info">Your need is our responsibility!!.
+              And our customer is our first priority!!<br>
+              SANJAY KIRANA STORE!!!
+            </p>
+        </div>
+        <div class="quick-links cart">
+            <h4>Quick links</h4>
+            <a href="./index.html" class="quick-links-contain footer-container-info">Home</a><br><br>
+            <a href="./pages/login.html" class="quick-links-contain footer-container-info">Login</a><br><br>
+            <a href="./pages/contact_us.html" class="quick-links-contain footer-container-info">contact</a>
+        </div>
+        <div class="footer-social cart">
+            <h4>Social accounts</h4>
+            <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram footer-container-info social-icon" style="color: white"></i><br><br></a>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook footer-container-info social-icon" style="color: white" ></i><br><br></a>
+            <a href="https://www.youtube.com/" target="_blank">
+            <i class="fa-brands fa-youtube footer-container-info social-icon" style="color: white;"></i><br><br></a>
+            <a href="https://github.com/" target="_blank">
+            <i class="fa-brands fa-github footer-container-info " style="color: white;"></i><br><br></a>
+        </div>
+        <div class="footer-contact cart">
+            <h4>Contact us</h4>
+            <div class="contact-infor">
+                <i class="fa-solid fa-location-dot footer-container-info" style="color: white"></i>&nbsp;
+                <span class="contact-text">Hans laxmi appartment room no 1 behind sankalp hospital
+                carbon naka shivaji nagar satpur nashik</span>
+            </div><br>
+            <div class="contact-info">
+                <i class="fa-solid fa-phone footer-container-info" style="color: white;"></i> &nbsp;&nbsp;
+                <a href="tel:+918208320633" class="contact-text">+919623420865</a>
+            </div><br>
+            <div class="contact-info">
+                <i class="fa-solid fa-envelope footer-container-info" style="color: white;"></i> &nbsp;&nbsp; 
+                <a href="mailto:sonawanejayesh947@gmail.com" class="contact-text">sanjaywani947@gmail.com</a>
+            </div>
+        </div>    
+    </div>
+  </div>
+  <script src="../js/review.js">
+   
+  </script>
+
+ <script src="../js/darklight.js">
+   
+</script> 
+  
+  
+  
+  <script src="https://kit.fontawesome.com/38442ccd2f.js" crossorigin="anonymous"></script>
+  </body>
+  </html>

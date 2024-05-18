@@ -469,11 +469,11 @@ h4{
 }
 
 .vdo{
-margin-top: 10px;
+/* margin-top: 10px; */
 /* margin-left: 30%; */
  /* width: 00px; */
 margin-left: 20px;
-margin-top: 100px;
+/* margin-top: 100px; */
 
 
 display: inline;
@@ -582,3 +582,31 @@ display: inline;
 }
 
 
+
+
+.theme{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.active_1{
+    border: solid black 1px;
+    background-color: yellow;
+
+}
+
+ .body-dark{
+
+    background-color: black;
+    color: white;
+ }
+
+ .body-light{
+
+ background-color:rgb(240, 240, 29);;
+  color: black;
+}

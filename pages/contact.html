@@ -22,7 +22,7 @@
       
 </head>
 
-<body>
+<body id="body">
   
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top"  data-bs-theme="dark">
     <div class="container-fluid mt-2 font_7 ">
@@ -36,14 +36,14 @@
             <a class="nav-link active mx-3 " aria-current="page" href="../pages/index.html"><b>HOME</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mx-2 " href="#"><b>ABOUT US</b></a>
+            <a class="nav-link active mx-2 " aria-current="page" href="../pages/aboutus.html"><b>REVIEWS</b></a>
           </li>
          
           <li class="nav-item active ">
-            <a class="nav-link disabled active mx-3" aria-disabled="true" href="../pages/product.html"><b>PRODUCTS</b></a>
+            <a class="nav-link active mx-3" aria-current="page" href="../pages/product.html"><b>PRODUCTS</b></a>
           </li>
           <li class="nav-item active ">
-            <a class="nav-link disabled active mx-2" aria-disabled="true"><b>contact us</b></a>
+            <a class="nav-link active mx-2" aria-current="page" href="../pages/contact.html"><b>contact us</b></a>
           </li>
           <li class="nav-item active ">
             <a class="nav-link disabled active mx-3" aria-disabled="true"><b>OPEN TIME :9.00 AM </b></a>
@@ -62,24 +62,15 @@
   </nav>
 
 
- 
+  
 
 
 
 
-    <div class="navbar ">
-      <div class="nav-left">
-        <img src="../img/main-logo.png"  class="logo" alt="logo" />
-      </div>
-      <div class="link">
-        <a href="../index.html" class="nav-text">Home</a>
-        <a href="../pages/aboutus.html" class="nav-text">About us</a>
-        <a href="../pages/login.html" class="nav-text">Login</a>
-        <a href="../pages/contact_us.html" class="nav-text">Contact us</a>
-        <img src="../icons/menu.png" class="hamburger">
-      </div>
-    </div>
-    <br><br>
+
+    
+    <img src="../images/dark.png" style="height: 30px; margin-top: 100px; margin-left: 5px;" id="dark-mode" onclick="darkmode()">
+     <img src="../images/light.png" style="height: 30px; margin-top: 100px;" id="light-mode" onclick="lightmode()">
 
 
     <h1  class="font_family text"      style="color: #2f0468">
@@ -132,7 +123,7 @@
         <br />
 
         <h3>
-          <b><i> Mobile no :-</i></b>
+          <b><i > Mobile no :-</i></b>
         </h3>
         <i class="fa-solid fa-phone" ></i>
         <a href="tel: +918208320633" style="text-decoration: none; color: black;" >+918208320633</a>
@@ -212,6 +203,7 @@
         </div>    
     </div>
   </div>
+  <script src="../js/darklight.js"></script>
   
   
   

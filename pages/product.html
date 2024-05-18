@@ -16,7 +16,7 @@
       
 </head>
 
-<body>
+<body id="body">
   
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top"  data-bs-theme="dark">
     <div class="container-fluid mt-2 font_7 ">
@@ -30,14 +30,14 @@
             <a class="nav-link active mx-3 " aria-current="page" href="../pages/index.html"><b>HOME</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mx-2 " href="#"><b>ABOUT US</b></a>
+            <a class="nav-link active mx-2 " aria-current="page" href="../pages/aboutus.html"><b>REVIEWS</b></a>
           </li>
          
           <li class="nav-item active ">
-            <a class="nav-link disabled active mx-3" aria-disabled="true" href="../pages/product.html"><b>PRODUCTS</b></a>
+            <a class="nav-link active mx-3" aria-current="page" href="../pages/product.html"><b>PRODUCTS</b></a>
           </li>
           <li class="nav-item active ">
-            <a class="nav-link disabled active mx-2" aria-disabled="true"><b>contact us</b></a>
+            <a class="nav-link  active mx-2" aria-current="page" href="../pages/contact.html"><b>contact us</b></a>
           </li>
           <li class="nav-item active ">
             <a class="nav-link disabled active mx-3" aria-disabled="true"><b>OPEN TIME :9.00 AM </b></a>
@@ -54,8 +54,11 @@
       </div>
     </div>
   </nav>
+  <img src="../images/dark.png" style="height: 30px; margin-top: 100px; margin-left: 5px;" id="dark-mode" onclick="darkmode()">
+   <img src="../images/light.png" style="height: 30px; margin-top: 100px;"id="light-mode" onclick="lightmode()">
+
           
-  <p class="text bg-body-secondary heading" style="margin-top: 100px;"> <b>Our products</b></p>
+  <p class="text bg-body-secondary heading" > <b>Our products</b></p>
 
   <div class="card_container p-2">
 
@@ -72,13 +75,13 @@
       
               <div class="product_price m-2  ">
               <span class="font_family"> <b>Price: </b>  <del> ₹ 25 </del>  ₹ 10 </span>
-              <span class="font_family m-4"> <b>Total: </b> <b> ₹ 10 </b><br></span>
+              <span class="font_family m-4"> <b>Total: </b> <span id="show-total"> ₹ 10 </span></span>
               </div>
 
               <div class="increment-icon">
-              <img class="increment-icon-img mb-2" src="../icons/add.png">
-             <span class="font_family m-2 txt1">1</span>
-             <img class="increment-icon-img mb-2" src="../icons/minus.png">
+              <img class="increment-icon-img mb-2" src="../icons/add.png" onclick="inc()">
+             <span class="font_family m-2 txt1" id="quantity-text">1</span>
+             <img class="increment-icon-img mb-2" src="../icons/minus.png" onclick="dec()">
 
              </div>
 
@@ -121,13 +124,13 @@
   
           <div class="product_price m-2  ">
           <span class="font_family"> <b>Price: </b>  <del> ₹ 50 </del> ₹ 35 </span>
-          <span class="font_family m-4"> <b>Total: </b> <b> ₹ 35 </b><br></span>
+          <span class="font_family m-4"> <b>Total: </b> <span id="show-total_1"> ₹ 35 </span></span>
           </div>
 
           <div class="increment-icon">
-          <img class="increment-icon-img mb-2" src="../icons/add.png">
-         <span class="font_family m-2 txt1">1</span>
-         <img class="increment-icon-img mb-2" src="../icons/minus.png">
+          <img class="increment-icon-img mb-2" src="../icons/add.png" onclick="increment()">
+         <span class="font_family m-2 txt1" id="quantity-text_1">1</span>
+         <img class="increment-icon-img mb-2" src="../icons/minus.png" onclick="decrement()">
 
          </div>
 
@@ -170,13 +173,13 @@
 
       <div class="product_price m-2  ">
       <span class="font_family"> <b>Price: </b>  <del> ₹ 40 </del> ₹ 20 </span>
-      <span class="font_family m-4"> <b>Total: </b> <b> ₹ 20 </b><br></span>
+      <span class="font_family m-4"> <b>Total: </b> <span id="showTotal_2"> ₹ 20 </span></span>
       </div>
 
       <div class="increment-icon">
-      <img class="increment-icon-img mb-2" src="../icons/add.png">
-     <span class="font_family m-2 txt1">1</span>
-     <img class="increment-icon-img mb-2" src="../icons/minus.png">
+      <img class="increment-icon-img mb-2" src="../icons/add.png" onclick="incr()">
+     <span class="font_family m-2 txt1" id="show-quantity_2">1</span>
+     <img class="increment-icon-img mb-2" src="../icons/minus.png" onclick="decr()">
 
      </div>
 
@@ -223,12 +226,12 @@
       
               <div class="product_price m-2  ">
               <span class="font_family"> <b>Price: </b>  <del> ₹ 65 </del> ₹ 30 </span>
-              <span class="font_family m-4"> <b>Total: </b> <b> ₹ 30 </b><br></span>
+              <span class="font_family m-4"> <b>Total: </b> <span id="show-total_3"> ₹ 30 </span></span>
               </div>
 
               <div class="increment-icon">
               <img class="increment-icon-img mb-2" src="../icons/add.png">
-             <span class="font_family m-2 txt1">1</span>
+             <span class="font_family m-2 txt1" id="show-quantity_3">1</span>
              <img class="increment-icon-img mb-2" src="../icons/minus.png">
 
              </div>
@@ -569,6 +572,21 @@
         </div>    
     </div>
   </div>
+
+
+
+ <script src="../js/product.js"></script>
+
+
+<script src="../js/darklight.js"></script>
+
+
+
+
+
+
+
+
   
   
   
